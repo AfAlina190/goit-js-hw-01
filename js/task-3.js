@@ -4,13 +4,6 @@ const contentWidth = parseFloat(content);
 const paddingWidth = parseFloat(padding);
 const borderWidth = parseFloat(border);
 
-if (isNaN(contentWidth) || isNaN(paddingWidth) || isNaN(borderWidth)) {
-    console.error(
-"Invalid input. Please provide valid values in the format 'Npx'."
-    );
-    return undefined; 
-}
-
   const totalWidth = contentWidth + 2 * paddingWidth + 2 * borderWidth;
 
 return totalWidth;
